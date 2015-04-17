@@ -1,103 +1,38 @@
 body {
-  .transition(background 2s);
-
   padding: @grid-gutter-width;
 
-  &.hour-1 {
-    background: #3b1b3b;
+  &.hour-transition {
+    .transition(background 60s);
   }
 
-  &.hour-2 {
-    background: #66282c;
+  .hour(@hour, @colour) {
+    &.hour-@{hour} {
+      background: @colour;
+    }
   }
 
-  &.hour-3 {
-    background: #99522c;
-  }
-
-  &.hour-4 {
-    background: #a97a2b;
-  }
-
-  &.hour-5 {
-    background: #779856;
-  }
-
-  &.hour-6 {
-    background: #459f7e;
-  }
-
-  &.hour-7 {
-    background: #34a1a8;
-  }
-
-  &.hour-8 {
-    background: #2a9bb7;
-  }
-
-  &.hour-9 {
-    background: #3095c7;
-  }
-
-  &.hour-10 {
-    background: #338cd7;
-  }
-
-  &.hour-11 {
-    background: #3686e1;
-  }
-
-  &.hour-12 {
-    background: #2e88e4;
-  }
-
-  &.hour-13 {
-    background: #337fd5;
-  }
-
-  &.hour-14 {
-    background: #3c78ca;
-  }
-
-  &.hour-15 {
-    background: #4664bd;
-  }
-
-  &.hour-16 {
-    background: #5452b1;
-  }
-
-  &.hour-17 {
-    background: #5d49ac;
-  }
-
-  &.hour-18 {
-    background: #6a4294;
-  }
-
-  &.hour-19 {
-    background: #793a67;
-  }
-
-  &.hour-20 {
-    background: #76314e;
-  }
-
-  &.hour-21 {
-    background: #561d3b;
-  }
-
-  &.hour-22 {
-    background: #391735;
-  }
-
-  &.hour-23 {
-    background: #241433;
-  }
-
-  &.hour-24 {
-    background: #221d41;
-  }
+  .hour(1,  #3b1b3b);
+  .hour(2,  #66282c);
+  .hour(3,  #99522c);
+  .hour(4,  #a97a2b);
+  .hour(5,  #779856);
+  .hour(6,  #459f7e);
+  .hour(7,  #34a1a8);
+  .hour(8,  #2a9bb7);
+  .hour(9,  #3095c7);
+  .hour(10, #338cd7);
+  .hour(11, #3686e1);
+  .hour(12, #2e88e4);
+  .hour(13, #337fd5);
+  .hour(14, #3c78ca);
+  .hour(15, #4664bd);
+  .hour(16, #5452b1);
+  .hour(17, #5d49ac);
+  .hour(18, #6a4294);
+  .hour(19, #793a67);
+  .hour(20, #76314e);
+  .hour(21, #561d3b);
+  .hour(22, #391735);
+  .hour(23, #241433);
+  .hour(24, #221d41);
 }
-
-
